@@ -17,7 +17,7 @@ spec:
           image: jhonnatha/multi-client
           resources:
             limits:
-              memory: "500Mi"
-              cpu: "400m"
+              memory: "600Mi"
+              cpu: "900m"
           ports:
             - containerPort: 3000
