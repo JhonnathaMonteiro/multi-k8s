@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: client-deployment
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       component: web
@@ -17,7 +17,7 @@ spec:
           image: jhonnatha/multi-client
           resources:
             limits:
-              memory: "80Mi"
-              cpu: "100m"
+              memory: "200Mi"
+              cpu: "200m"
           ports:
             - containerPort: 3000
