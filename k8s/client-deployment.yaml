@@ -15,9 +15,5 @@ spec:
       containers:
         - name: client
           image: jhonnatha/multi-client
-          resources:
-            limits:
-              memory: "600Mi"
-              cpu: "900m"
           ports:
             - containerPort: 3000
