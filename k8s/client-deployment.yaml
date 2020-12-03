@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: client
-          image: stephengrider/multi-client
+          image: jhonnatha/multi-client
           resources:
             limits:
               memory: "500Mi"
