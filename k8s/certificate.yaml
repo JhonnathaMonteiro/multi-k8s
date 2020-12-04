@@ -1,0 +1,20 @@
+apiVersion: cert-manager.io/v1alpha2
+kind: Certificate
+metadata:
+  name: jonne-io-tls
+spec:
+  secretName: jonne-io
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: jonne.io
+  dnsNames:
+    - jonne.io
+    - www.jonne.io
+  acme:
+    config:
+      - http01:
+          ingressClass: nginx
+        domains:
+          - jonne.io
+          - www.jonne.io
